@@ -7,7 +7,7 @@ app.secret_key = "ronen_ultra_secret_99"
 
 # הגדרות Firebase (תעתיק את אלו מה-Firebase Console -> Project Settings)
 config = {
-    "apiKey": "YOUR_API_KEY",
+    "apiKey": "AIzaSyA2hdiddmfdy0E0LpeLKHTXKeCsA55YM8M",
     "authDomain": "ronen-spammer-6b075.firebaseapp.com",
     "databaseURL": "https://ronen-spammer-6b075-default-rtdb.europe-west1.firebasedatabase.app/",
     "storageBucket": "ronen-spammer-6b075.appspot.com"
