@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <title>RONEN SPAMMER - DASHBOARD</title>
+    <style>
+        body { background-color: #000; color: #fff; font-family: 'Courier New', Courier, monospace; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .box { border: 2px solid #ff0000; padding: 40px; border-radius: 15px; box-shadow: 0 0 20px #ff0000; text-align: center; }
+        h1 { color: #ff0000; text-transform: uppercase; letter-spacing: 5px; }
+        .info { margin: 20px 0; color: #ff4444; }
+        .status { color: #ffff00; font-weight: bold; margin-bottom: 20px; }
+        input { background: #111; border: 1px solid #ff0000; color: #fff; padding: 10px; margin-bottom: 10px; width: 80%; }
+        button { background: #ff0000; color: #fff; border: none; padding: 10px 20px; cursor: pointer; font-weight: bold; width: 100%; }
+        button:hover { background: #aa0000; }
+        .logout { margin-top: 20px; display: block; color: #888; text-decoration: none; font-size: 0.8em; }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>SYSTEM UNLOCKED</h1>
+        <p class="info">User: {{ user }}</p>
+        
+        <p class="status">LICENSE STATUS: {{ info.license }}</p>
+
+        <form action="/execute_attack" method="POST">
+            <input type="text" name="phone" placeholder="ENTER TARGET PHONE (e.g. 0501234567)" required>
+            <button type="submit">EXECUTE ATTACK</button>
+        </form>
+
+        <a href="/logout" class="logout">LOGOUT</a>
+    </div>
+</body>
+</html>
