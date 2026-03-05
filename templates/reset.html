@@ -1,8 +1,21 @@
-<body style="background:#000; color:#fff; text-align:center; font-family:sans-serif;">
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Reset Password</title>
+    <style>
+        body { background: #000; color: #fff; font-family: sans-serif; text-align: center; padding-top: 100px; }
+        input { padding: 10px; width: 250px; background: #111; border: 1px solid #ff0000; color: #fff; }
+        button { background: red; color: white; border: none; padding: 10px 20px; cursor: pointer; margin-top: 10px; }
+    </style>
+</head>
+<body>
     <h1>RESET PASSWORD</h1>
     <form method="POST">
-        <input type="email" name="email" placeholder="Enter your email" required style="padding:10px; width:250px;"><br><br>
-        <button type="submit" style="background:red; color:white; border:none; padding:10px 20px;">SEND LINK</button>
+        <input type="email" name="email" placeholder="Enter your email" required><br>
+        <button type="submit">SEND RESET LINK</button>
     </form>
+    <p>Don't forget to check your **SPAM** folder.</p>
     <a href="/login" style="color:#888;">Back</a>
 </body>
+</html>
